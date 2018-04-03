@@ -249,9 +249,9 @@ function DebuggerClient(address)
     {
       var chr = string.charCodeAt(i);
 
-      if (chr >= 0x7ff)
+      if (chr > 0x7ff)
       {
-        byteLength ++;
+        byteLength++;
       }
 
       if (chr >= 0x7f)
